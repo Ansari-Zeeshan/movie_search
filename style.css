@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.main
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.main .container
+{
+    width: 100%;
+    padding: 0px 25px;
+    margin: 0px 15px;
+}
+.main .row
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main .div
+{
+    flex:  0 0 25%;
+    max-width: 25%;
+}
+.main .div img
+{
+    height: 300px;
+    width: 95%;
+    margin: 2rem 0 1rem;
+}
+.main .col-md-12
+{
+    flex:  0 0 100%;
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.append_movieinfo
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.append_movieinfo h2
+{
+    font-size: 19px;
+    width: 80%;
+}
+.append_movieinfo p:nth-child(3)
+{
+    font-size: 13px;
+    margin-top: 2px;
+}
+.append_movieinfo p:nth-child(4)
+{
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+.append_movieinfo p:nth-child(5)
+{
+    width: 90%;
+    font-size: 14px;
+}
+
+.main .col-md-12 input[type="text"]
+{
+    width: 50%;
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #ffffff;
+    outline: 0;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 6%);
+    padding-left: 15px;
+    display: inline !important;
+    line-height: 1.5;
+    color: #495057;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-top: 7px;
+    margin-bottom: 2rem;
+}
+@media (max-width:849px) 
+{
+    .main .div
+    {
+        flex:  0 0 100%;
+        max-width: 100%;
+    }
+    .main .col-md-12 input[type="text"] {
+        width: 70%;
+    }
+}
