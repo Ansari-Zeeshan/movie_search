@@ -48,7 +48,7 @@ function mapdata(realdata,url)
         img.src=`${url.concat(data.poster_path)}`;
         h2.innerText=`${data.title}`;
         p1.innerText=`Release Date: ${data.release_date}`;
-        p2.innerText=`${data.overview}`.substr(0,150);
+        p2.innerText=`${data.overview}`.substr(0,150)+'...';
         p3.innerText=`Rating: ${data.vote_average}`;
         div.appendChild(img);
         div.appendChild(h2);
